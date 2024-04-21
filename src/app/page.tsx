@@ -159,12 +159,13 @@ export default function Dashboard() {
                                                             </td>
                                                             <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
                                                             <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                                                            {typeof data.result[item] === 'string' ? data.result[item] : Object.keys(data.result[item]).map((childItem) => {
+                                                                {JSON.stringify(data.result)}
+                                                            {/* {typeof data.result[item] === 'string' ? data.result[item] : Object.keys(data.result[item]).map((childItem) => {
                                                                 return (
                                                                     <li key={childItem}>{childItem}: {typeof data.result[item][childItem] === 'string' ? data.result[item][childItem] : JSON.stringify(data.result[item][childItem])}</li>
                                                                     
                                                                 )
-                                                            })}
+                                                            })} */}
                                                             </ul>
                                                             </td>
                                                         </tr>
